@@ -14,29 +14,32 @@
 <body>
   <header class="card shadow-lg">
     <nav class="menu py-4 d-flex justify-content-between">
-      <div class="logo ms-2">
-        <img src="images/logo-mic-500x500.png" width="50px" height="50px" alt="logo" />
-      </div>
+
       <ul class="menuLinks list-unstyled m-0 p-0 text-center">
         <li><a href="#">Home</a></li>
-        <li><a href="#">Education</a></li>
-        <li><a href="#">Certificates</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">contact</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">contact</a></li>
       </ul>
       <div class="icons">
         <ul class="list-unstyled m-0 p-0">
           <li>
-            <a href="#"><i class="fa-brands fa-linkedin-in fa-bounce"></i></a>
+            <a href="https://linkedin.com/in/vaibhav-farakate-633a8a1bb" target="_blank" rel="noopener noreferrer"><i
+                class="fa-brands fa-linkedin-in fa-bounce"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fa-brands fa-whatsapp fa-bounce"></i></a>
+            <a href="https://wa.me/917447247525" target="_blank" rel="noopener noreferrer"><i
+                class="fa-brands fa-whatsapp fa-bounce"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fa-brands fa-instagram fa-bounce"></i></a>
+            <a href="https://instagram.com/vaibhav_farakate_vibzz?igshid=ZDdkNTZiNTM=" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-instagram fa-bounce"></i></a>
           </li>
           <li>
-            <a href="#"><i class="fa-brands fa-facebook fa-bounce"></i></a>
+            <a href="mailto:vaibhav7525@gmail.com"><i class="fa-regular fa-envelope fa-bounce"
+                style="color: #ffffff;"></i></a>
           </li>
         </ul>
       </div>
@@ -47,25 +50,26 @@
       <div class="row">
         <div class="col-12 mx-auto">
           <div class="card my-4 shadow-lg">
-            <div class="ribbon fs-3 fw-bold">About Myself</div>
+
             <div class="row text-center mb-3">
-              <div class="my-2 col-12 col-lg-6">
-                <img src="images/profile pic.jpg" alt="my pic" height="500px" width="500px"
-                  class="rounded-circle my-3" />
+              <div class="my-lg-2 mt-5 col-12 col-lg-6">
+                <img id="ProfilePic" src="images/profile pic.jpg" alt="my pic" height="500px" width="500px"
+                  class="rounded-circle my-3 " />
               </div>
               <div class=" col-12 col-lg-6 d-lg-grid align-content-center">
                 <h2 class="text-white">Hello !!</h2>
+                <h1 style="color:blanchedalmond;">I am Vaibhav & </h1>
+                <h1 style="color:blanchedalmond;">I am a Frontend Developer</h1>
                 <h2>Welcome to my portfolio website...</h2>
-                <h1 class="text-danger">I am Vaibhav & I am a Frontend Developer</h1>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-8 mx-auto">
+        <div id="skills" class="col-12 col-lg-8 mx-auto">
           <div class="card my-4 shadow-lg p-3">
             <div class="ribbon fs-3 fw-bold">Skills</div>
             <div class="row mb-3">
-              <h2>Technical Skills</h2>
+              <h2 class="mt-5">Technical Skills</h2>
               <div>
                 <ul class="list-group list-group-flush list-unstyled">
                   <li class="list-group-item bg-transparent d-flex justify-content-between">
@@ -159,15 +163,15 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-lg-8 mx-auto">
+        <div id="education" class="col-12 col-lg-8 mx-auto">
           <div class="card my-4 shadow-lg p-3">
             <div class="ribbon fs-3 fw-bold">Education</div>
             <div class="mt-5">
               <div class="d-flex justify-content-between">
                 <h4>Bachelor of Technology</h4>
-                <button class="btn btnToggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
-                  aria-expanded="false">
-                  <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i>
+                <button class="btn btnToggle btn-outline-dark" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse1" aria-expanded="false" data-id="1">
+                  <i id="toggleIcon1" class="fa-solid fa-sort-down down" style="color: #ffffff;"></i>
                 </button>
               </div>
 
@@ -183,9 +187,9 @@
 
               <div class="d-flex justify-content-between">
                 <h4>Higher Secondary Certificate</h4>
-                <button class="btn " type="button" data-bs-toggle="collapse" data-bs-target="#collapse2"
-                  aria-expanded="false">
-                  <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i>
+                <button class="btn  btnToggle btn-outline-dark" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse2" aria-expanded="false" data-id="2">
+                  <i id="toggleIcon2" class="fa-solid fa-sort-down down" style="color: #ffffff;"></i>
                 </button>
               </div>
 
@@ -201,9 +205,9 @@
 
               <div class="d-flex justify-content-between">
                 <h4>Secondary School Certificate</h4>
-                <button class="btn " type="button" data-bs-toggle="collapse" data-bs-target="#collapse3"
-                  aria-expanded="false">
-                  <i class="fa-solid fa-sort-down" style="color: #ffffff;"></i>
+                <button class="btn btnToggle btn-outline-dark" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse3" aria-expanded="false" data-id="3">
+                  <i id="toggleIcon3" class="fa-solid fa-sort-down down" style="color: #ffffff;"></i>
                 </button>
               </div>
 
@@ -220,11 +224,11 @@
 
 
         </div>
-        <div class="col-12 my-4">
+        <div id="certificates" class="col-12 my-4">
           <div class="card shadow-lg p-3">
             <div class="ribbon fs-3 fw-bold">Certificates</div>
             <div>
-              <h2>Technical Certificates</h2>
+              <h2 class="mt-5">Technical Certificates</h2>
               <div class="table-responsive">
                 <table class="table table-striped">
                   <thead>
@@ -299,7 +303,7 @@
             <div class="my-5">
               <h2>Sports Certificate</h2>
               <div class="table-responsive">
-                <table class="table table-stripped">
+                <table class="table table-striped">
                   <thead>
                     <tr>
                       <td>Sr.No.</td>
@@ -332,7 +336,7 @@
             <div>
               <h2>Other Certificate</h2>
               <div class="table-responsive">
-                <table class="table table-stripped">
+                <table class="table table-striped ">
                   <thead>
                     <tr>
                       <td>Sr.No.</td>
@@ -380,14 +384,38 @@
             </div>
           </div>
         </div>
+
+        <div id="projects" class="col-12 mx-auto">
+          <div class="card my-4 shadow-lg p-3">
+            <div class="ribbon fs-3 fw-bold">Projects</div>
+            <h2 class="mt-5">Tic Tac Toe Game</h2>
+            <div>
+              <p class="my-2">Tic-tac-toe (American English), noughts and crosses (Commonwealth English), or Xs and Os
+                (Canadian or
+                Irish English) is a game for two players who take turns marking the spaces in a three-by-three grid with
+                X or O. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal
+                row is the winner. </p>
+              <div class="text-center">
+                <a class="btn btn-info mb-2 mb-lg-0" href="https://github.com/VaibhavFarakate/Tic-Tac-Toe.github.io"
+                  target="_blank">Click here to
+                  view source code</a>
+                <a class="btn btn-warning" href="https://vaibhavfarakate.github.io/Tic-Tac-Toe.github.io/"
+                  target="_blank"> Click here
+                  to play the game </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
   </main>
-  <footer class="footer  text-light px-2">
+  <footer id="contact" class="footer  text-light px-2">
     <div class="row">
-      <h2 class="text-center my-2">Contact </h2>
+      <div class="logo text-center my-2">
+        <img src="images/logo-mic-500x500.png" width="50px" height="50px" alt="logo" />
+      </div>
       <hr>
       <div class="col-12 col-lg-4 text-center">
-        <h4>Reach Me</h4>
+        <h4 class="text-decoration-underline">Reach Me</h4>
         <div class="input-group mb-3">
           <span class="input-group-text" id="name">Name</span>
           <input type="text" class="form-control" placeholder="Enter Your Name" aria-label="Username"
@@ -403,32 +431,42 @@
           <button class="btn btn-primary">Submit</button>
         </div>
       </div>
+      <hr class="d-lg-none">
       <div class="col-12 col-lg-4 text-center">
-        <h4>Quick Links</h4>
+        <h4 class="text-decoration-underline">Quick Links</h4>
         <ul class="list-group bg-transparent list-group-flush ">
+          <a class="list-group-item border-0 bg-transparent text-white" href="#skills">Skills</a>
+          <a class="list-group-item border-0 bg-transparent text-white" href="#education">Education</a>
 
-          <a class="list-group-item border-0 bg-transparent text-white" href="">Education</a>
+          <a class="list-group-item border-0 bg-transparent text-white" href="#certificates">Certificates</a>
 
-          <a class="list-group-item border-0 bg-transparent text-white" href="">Certificates</a>
-
-          <a class="list-group-item border-0 bg-transparent text-white" href="">Projects</a>
+          <a class="list-group-item border-0 bg-transparent text-white" href="#projects">Projects</a>
 
         </ul>
       </div>
+      <hr class="d-lg-none">
       <div class="col-12 col-lg-4 text-center">
-        <h4>Address</h4>
+        <h4 class="text-decoration-underline">Address</h4>
         <ul class="list-group list-group-flush">
           <li class="list-group-item border-0 bg-transparent text-white">Sankpal Nagar,</li>
           <li class="list-group-item border-0 bg-transparent text-white">Kasaba Bawada,</li>
           <li class="list-group-item border-0 bg-transparent text-white">Kolhapur-416006</li>
-          <li class="list-group-item border-0 bg-transparent text-white">
-            <i class="fa-solid fa-phone"></i><span> +91 7447247525</span>
-          </li>
-          <li class="list-group-item border-0 bg-transparent  text-white">
-            <i class="fa-solid fa-envelope"></i><span> vaibhav7525@gmail.com</span>
-          </li>
+
+          <a href="tel:7447247525" class="list-group-item border-0 bg-transparent text-white"><i
+              class="fa-solid fa-phone"></i><span>
+              +91 7447247525</span></a>
+
+
+          <a href="mailto:vaibhav7525@gmail.com" class="list-group-item border-0 bg-transparent  text-white"><i
+              class="fa-solid fa-envelope"></i><span>
+              vaibhav7525@gmail.com</span></a>
+
         </ul>
       </div>
+    </div>
+    <hr>
+    <div class="text-center text-muted pb-2">
+      copyright &copy; All rights reserved
     </div>
   </footer>
 </body>

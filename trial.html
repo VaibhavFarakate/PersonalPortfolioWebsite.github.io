@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="fonts/css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">Hidden brand</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="icons d-flex">
+                <ul class="list-unstyled m-0 p-0">
+                    <li>
+                        <a href="https://linkedin.com/in/vaibhav-farakate-633a8a1bb" target="_blank"
+                            rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in fa-bounce"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/917447247525" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-whatsapp fa-bounce"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/vaibhav_farakate_vibzz?igshid=ZDdkNTZiNTM=" target="_blank"
+                            rel="noopener noreferrer"><i class="fa-brands fa-instagram fa-bounce"></i></a>
+                    </li>
+                    <li>
+                        <a href="mailto:vaibhav7525@gmail.com"><i class="fa-regular fa-envelope fa-bounce"
+                                style="color: #ffffff;"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="col-12 col-lg-8 mx-auto">
+        <div class="card my-4 shadow-lg p-3">
+            <div class="ribbon fs-3 fw-bold">Education</div>
+            <div class="mt-5">
+                <div class="d-flex justify-content-between">
+                    <h4>Bachelor of Technology</h4>
+                    <button class="btn btnToggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"
+                        aria-expanded="false" data-id="1">
+                        <i id="toggleIcon1" class="fa-solid fa-sort-down down" style="color: #ffffff;"></i>
+                    </button>
+                </div>
+
+                <div class="collapse" id="collapse1">
+                    <div class="card card-body  text-white">
+                        <p>College Name - Annasaheb Dange College Of Engineering And Technology</p>
+                        <p>Stream - Automobile Engineering</p>
+                        <p>Passout Year - 2022</p>
+                        <p>Grades - 7.49 CPI</p>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="d-flex justify-content-between">
+                    <h4>Higher Secondary Certificate</h4>
+                    <button class="btn " type="button" data-bs-toggle="collapse" data-bs-target="#collapse2"
+                        aria-expanded="false" data-id="2">
+                        <i id="toggleIcon2" class="fa-solid fa-sort-down down" style="color: #ffffff;"></i>
+                    </button>
+                </div>
+
+                <div class="collapse" id="collapse2">
+                    <div class="card card-body  text-white">
+                        <p>College Name - Swami Vivekanad College,Kolhapur</p>
+                        <p>Stream - Science</p>
+                        <p>Passout Year - 2018</p>
+                        <p>Grades - 61%</p>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="d-flex justify-content-between">
+                    <h4>Secondary School Certificate</h4>
+                    <button class="btn " type="button" data-bs-toggle="collapse" data-bs-target="#collapse3"
+                        aria-expanded="false" data-id="3">
+                        <i id="toggleIcon3" class="fa-solid fa-sort-down down" style="color: #ffffff;"></i>
+                    </button>
+                </div>
+
+                <div class="collapse" id="collapse3">
+                    <div class="card card-body   text-white">
+                        <p>College Name - Jeevan Kalyan Madhyamik Vidyalaya</p>
+                        <p>Stream - Semi English</p>
+                        <p>Passout Year - 2016</p>
+                        <p>Grades - 89%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.0.min.js"></script>
+
+    <script>
+        $("button").click(toggler);
+
+        function toggler() {
+
+            var btnId = $(this).data("id");
+            console.log(btnId);
+            var ElementId = "#toggleIcon" + btnId;
+            console.log(ElementId);
+
+
+            if ($(ElementId).hasClass("down")) {
+
+                $(ElementId).animate({ rotate: '180deg' }, 300);
+                $(ElementId).addClass("up");
+                $(ElementId).removeClass("down");
+            }
+            else if ($(ElementId).hasClass("up")) {
+
+                $(ElementId).animate({ rotate: '0deg' }, 300);
+                $(ElementId).addClass("down");
+                $(ElementId).removeClass("up");
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
