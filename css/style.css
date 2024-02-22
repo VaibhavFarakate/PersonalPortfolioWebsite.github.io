@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700");
+
 * {
   margin: 0;
   padding: 0;
 }
+
 :root {
   --bodyColor: #8c7fbe;
   --headFootColor: #3c2b7f;
@@ -16,6 +18,7 @@ body {
   font-family: "Open Sans Condensed", sans-serif;
   background-color: var(--bodyColor);
 }
+
 .menu {
   background: var(--headFootColor);
 }
@@ -24,6 +27,7 @@ body {
   display: inline-block;
   margin: 0 15px;
 }
+
 .menu a {
   font-size: 22px;
   text-transform: uppercase;
@@ -33,6 +37,7 @@ body {
   position: relative;
   padding: 4px 0;
 }
+
 .menu a::before {
   content: "";
   width: 100%;
@@ -45,6 +50,7 @@ body {
   transform: scale3d(0, 1, 1);
   transform-origin: 0 50%;
 }
+
 .menu a:hover::before {
   transform: scale3d(1, 1, 1);
 }
@@ -53,28 +59,35 @@ body {
   transform-origin: 50% 50%;
   background: var(--menuHover);
 }
+
+.menuBtn i {
+  font-size: 25px;
+}
+
 .card {
   position: relative;
   background-color: var(--cardBg);
 }
+
 /* ribbon */
 .ribbon {
-  --f: 10px; /* control the folded part*/
-  --r: 15px; /* control the ribbon shape */
-  --t: 20px; /* the top offset */
+  --f: 10px;
+  /* control the folded part*/
+  --r: 15px;
+  /* control the ribbon shape */
+  --t: 20px;
+  /* the top offset */
 
   position: absolute;
   inset: var(--t) calc(-1 * var(--f)) auto auto;
   padding: 0 40px var(--f) calc(50px + var(--r));
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% calc(100% - var(--f)),
-    calc(100% - var(--f)) 100%,
-    calc(100% - var(--f)) calc(100% - var(--f)),
-    0 calc(100% - var(--f)),
-    var(--r) calc(50% - var(--f) / 2)
-  );
+  clip-path: polygon(0 0,
+      100% 0,
+      100% calc(100% - var(--f)),
+      calc(100% - var(--f)) 100%,
+      calc(100% - var(--f)) calc(100% - var(--f)),
+      0 calc(100% - var(--f)),
+      var(--r) calc(50% - var(--f) / 2));
   /* background: #BD1550; */
   background-color: var(--ribbonBg);
   /* color: #9337bb; */
@@ -82,19 +95,23 @@ body {
   box-shadow: 0 calc(-1 * var(--f)) 0 inset #0005;
   z-index: 1000;
 }
+
 .footer {
   background-color: var(--headFootColor);
 }
+
 li,
 a {
   color: white;
 }
+
 @media screen and (max-width: 995px) {
   #ProfilePic {
     height: 250px;
     width: 250px;
   }
 }
+
 #myBtn {
   display: none;
   position: fixed;
@@ -113,4 +130,8 @@ a {
 
 #myBtn:hover {
   background-color: #555;
+}
+
+#projects hr {
+  margin-bottom: 0;
 }
